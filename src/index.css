@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.bggradient {
+  background: #cfcfc7;
+  background: linear-gradient(to top, #cfcfc7 0%, #b2a8cf 100%);
+}
+
+.contain {
+  width: min(100% - 15px, 500px);
+  margin-inline: auto;
+}
+
+.textgradient {
+  background: #451f6b;
+  background: radial-gradient(
+    circle farthest-corner at top right,
+    #451f6b 12%,
+    #cf1512 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.newtext {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #6800cf;
+  background: radial-gradient(
+    circle farthest-corner at top right,
+    #6800cf 0%,
+    #730a0a 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about {
+  font-family: "Candal", sans-serif;
+}
+.abouttext {
+  font-family: "Sintony", sans-serif;
+}
+
+.horizonline {
+  position: relative;
+  top: 5px;
+  border: none;
+  height: 4px;
+  background: #73264d;
+  margin-bottom: 50px;
+}
+
+@layer base {
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#330099] to-[#cc6600] font-bold font-primary hover:from-[#cc6600] hover:to-[#330099];
+  }
+
+  .section {
+    @apply py-8 lg:py-10 lg:h-screen flex items-center;
+  }
+}
