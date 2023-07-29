@@ -63,7 +63,7 @@ const Contact = () => {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1-tBwwCdtdYYusDo2oQRU_gL25VaJdxX5/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1T-uej0XE9I4vdTdSIqYYxgfpG17cVnXh/view?usp=sharing"
                   className="text-gradient btn-link lg:text-[30px] lg:pt-2"
                   target="_blank"
                 >
